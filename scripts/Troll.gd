@@ -14,10 +14,13 @@ func _ready():
 func _physics_process(delta: float) -> void:
     var motion = Vector2.ZERO
     if target:
-        if target.velocity.x < 0:
+        #print("TARGET: %s" % target.position.x)
+        #print("ENEMY: %s" % $".".position.x)
+        if target.position.x < $".".position.x:
+            print("POR TU IZQUIERDA!")
             $AnimatedSprite.flip_h = true
             $AttackArea/AttackCollision.position = Vector2(-22.5, 11)
-        if target.velocity.x > 0:
+        if target.position.x > $".".position.x:
             $AnimatedSprite.flip_h = false
             $AttackArea/AttackCollision.position = Vector2(22.5, -11)
         #$AnimatedSprite.animation = 'run'

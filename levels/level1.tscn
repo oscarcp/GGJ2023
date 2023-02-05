@@ -2647,7 +2647,10 @@ cell_quadrant_size = 64
 format = 1
 
 [node name="Troll" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1002, 416 )
+position = Vector2( 1002, 436 )
+
+[node name="Troll2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 950, 435 )
 
 [connection signal="body_entered" from="Respawn" to="Respawn" method="_on_Respawn_body_entered"]
 [connection signal="body_entered" from="NPC" to="NPC" method="_on_NPC_body_entered"]
