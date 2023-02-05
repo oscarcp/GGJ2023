@@ -30,7 +30,7 @@ func _on_PlayerDetection_body_entered(body: Node) -> void:
     if body.name == 'Player':
         target = body
         player_in_view = true
-
+        $AnimatedSprite.animation = 'run'
 
 func _on_PlayerDetection_body_exited(body: Node) -> void:
     if body.name == 'Player':
