@@ -1,0 +1,61 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 7
+syntax_version = 2
+raw_text = "~ intro_title
+
+Peasant: Musician! You're back from your travels! As you can see your homeland is not what it used to be... please, [do shake_camera()][shake rate=30 level=20]help us with your music![/shake] [TR:t230b092a5d]
+Musician: Wait, I'm a musician, not a warrior! How do you expect me to battle? [TR:tce4f5e9f78]
+Peasant: We have discovered that these creatures hate music, so you're the only one equipped for this! [TR:t7e00409f0d]
+Peasant: Oh, and someone I just met told me you have to push 'X' to play your music? Whatever that means... [TR:ta289fde3a4]"
+errors = [  ]
+titles = {
+"intro_title": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "intro_title",
+"type": "title"
+},
+"2": {
+"character": "Peasant",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "Musician! You're back from your travels! As you can see your homeland is not what it used to be... please, [do shake_camera()][shake rate=30 level=20]help us with your music![/shake]",
+"translation_key": "t230b092a5d",
+"type": "dialogue"
+},
+"3": {
+"character": "Musician",
+"character_replacements": [  ],
+"next_id": "4",
+"replacements": [  ],
+"text": "Wait, I'm a musician, not a warrior! How do you expect me to battle?",
+"translation_key": "tce4f5e9f78",
+"type": "dialogue"
+},
+"4": {
+"character": "Peasant",
+"character_replacements": [  ],
+"next_id": "5",
+"replacements": [  ],
+"text": "We have discovered that these creatures hate music, so you're the only one equipped for this!",
+"translation_key": "t7e00409f0d",
+"type": "dialogue"
+},
+"5": {
+"character": "Peasant",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Oh, and someone I just met told me you have to push 'X' to play your music? Whatever that means...",
+"translation_key": "ta289fde3a4",
+"type": "dialogue"
+}
+}

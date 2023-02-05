@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://import/ambViento2.ogg-d3725e1820b7f489a53e1949fdcbf159.oggstr"
+
+[deps]
+
+source_file="res://music/ambViento2.ogg"
+dest_files=[ "res://import/ambViento2.ogg-d3725e1820b7f489a53e1949fdcbf159.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
